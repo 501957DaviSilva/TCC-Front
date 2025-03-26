@@ -1,1 +1,14 @@
-Teste
+            **ESTRUTURA DE PASTAS**
+assets → Pasta para imagens e ícones.
+css → Folhas de estilo organizadas por páginas e funcionalidades.
+js → Scripts organizados para cada funcionalidade.
+paginas → Arquivos HTML para cada página do site.
+componentes → Arquivos de componentes reutilizáveis como Menu, Rodapé e Cards.
+
+
+A branch indexV1 contém:
+
+*Página principal (index.html) com HTML, CSS e JavaScript integrados
+*principal.js com lógica para carregamento dinâmico de menu e rodapé (componentização visando manutenção e escalabilidade)
+*Lógica para ocultar automaticamente o link do menu referente à página atual
+*Nas demais páginas, foi incluído apenas o menu, rodapé e fontes, para estruturar a base visual inicial
