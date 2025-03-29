@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Title+Hero&display=swap" rel="stylesheet">
+    <title>Registre-se</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <h1>Cadastro de Usuário</h1>
+    <form id="formCadastro">
+      <label for="tipoUsuario">Selecione o tipo de usuário:</label>
+      <select id="tipoUsuario" name="tipoUsuario" onchange="alterarCampos()">
+        <option value="comum">Usuário Comum</option>
+        <option value="personal">Personal</option>
+        <option value="proprietario">Proprietário de Academia</option>
+      </select>
+
+      <!-- Campos Comuns para Todos -->
+      <div id="comumCampos" class="camposComum">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+    <!-- Campos para o Personal -->
+    <div id="personalCampos" class="camposPersonal" style="display:none;">
+      <label for="especialidade">Especialidade:</label>
+      <input type="text" id="especialidade" name="especialidade">
+
+      <label for="avaliacoes">Avaliações:</label>
+      <input type="number" id="avaliacoes" name="avaliacoes">
+    </div>
+
+    <!-- Campos para o Proprietário de Academia -->
+    <div id="proprietarioCampos" class="camposProprietario" style="display:none;">
+      <label for="nomeAcademia">Nome da Academia:</label>
+      <input type="text" id="nomeAcademia" name="nomeAcademia">
+
+      <label for="cnpj">CNPJ da Academia:</label>
+      <input type="text" id="cnpj" name="cnpj">
+
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco">
+    </div>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+    <script src="../js/cadastro.js"></script>
+    <div id="footer-placeholder"></div>
+    <script src="../js/principal.js"></script>
+  </body>
+</html>
