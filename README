@@ -12,3 +12,7 @@ A branch indexV1 contém:
 *principal.js com lógica para carregamento dinâmico de menu e rodapé (componentização visando manutenção e escalabilidade)
 *Lógica para ocultar automaticamente o link do menu referente à página atual
 *Nas demais páginas, foi incluído apenas o menu, rodapé e fontes, para estruturar a base visual inicial
+OBS: Ajustar imports de css dentro das classes
+
+Terceiro commit indexV1 contém
+*classes cadastro css, html, JavaScript com o início
