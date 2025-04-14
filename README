@@ -1,4 +1,7 @@
-            **ESTRUTURA DE PASTAS**
+# Guides Fit
+
+## 📁 Estrutura de Pastas
+
 assets → Pasta para imagens e ícones.
 css → Folhas de estilo organizadas por páginas e funcionalidades.
 js → Scripts organizados para cada funcionalidade.
@@ -16,3 +19,15 @@ OBS: Ajustar imports de css dentro das classes
 
 Terceiro commit indexV1 contém
 *classes cadastro css, html, JavaScript com o início
+
+
+##  Formatação automática com Prettier
+
+Utilizamos o **Prettier** para manter um código limpo e padronizado entre todos os membros da equipe.
+
+###  Instalação
+
+> Requer Node.js instalado no sistema.
+
+Comando 
+npm install --save-dev prettier
