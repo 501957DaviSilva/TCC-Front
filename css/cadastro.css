@@ -1,53 +1,50 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f9;
+.left-side {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
+.left-side h1 {
+  font-size: 4vw;
+  margin-bottom: 15px;
 }
 
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.left-side p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
+
+
+.sign-in-btn:hover {
+  background-color: #fff;
+  color: #000;
 }
 
-input, select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.form-container {
+  max-width: 500px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
+.checkbox-label {
+  font-size: 0.9rem;
 }
 
-button:hover {
-    background-color: #45a049;
+.checkbox-label a {
+  color: #3b0ca3;
+  text-decoration: none;
 }
 
-.camposPersonal, .camposProprietario {
-    margin-top: 20px;
+.checkbox-label a:hover {
+  text-decoration: underline;
 }
+
