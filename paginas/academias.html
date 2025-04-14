@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/academias.css">
+    <link rel="stylesheet" href="../css/card_base.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/rodape.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Title+Hero&display=swap" rel="stylesheet">
@@ -11,8 +12,23 @@
   </head>
   <body>
     <div id="nav-placeholder"></div>
-
+    <div class="container-academias">
+      <h2>Onde gostaria de treinar?</h2>
+    
+      <div class="pesquisar">
+        <input type="text" id="entradaPesquisa" placeholder="Digite aqui CEP, Cidade ou Bairro" />
+        <span class="fechar-pesquisa" onclick="document.getElementById('entradaPesquisa').value = ''">✕</span>
+      </div>
+    
+      <p><span id="contador-academias">0</span> academias encontradas</p>
+    
+      <!-- <div class="filtros-container"> ... </div> -->
+    
+      <div id="cards-container" class="grid-container"></div>
+    </div>
+    
     <div id="footer-placeholder"></div>
     <script src="../js/principal.js"></script>
+    <script src="../js/academias.js"></script>
   </body>
 </html>
